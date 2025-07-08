@@ -25,26 +25,26 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: 'Project 1',
+    name: 'Light Copilot',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
+      'A Desktop Application that allows users to chat with AI models anywhere on their computer. Activating via hotkey, it reads in the current highlgihted text and provides a seamless user experience.',
+    stack: ['Electronjs', 'TypeScript', 'React', 'LLM Integration'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 2',
+    name: 'Trading Ideation',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
+      'A strategy backtesting system with dashboard and analysis from AI models simulating different views from trading experts',
+    stack: ['Streamlit', 'LLM Integration', 'Python', 'Data Engineering', 'Finance'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 3',
+    name: 'Low Latency Data Pipeline',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
+      'Simulating a low latency data pipeline for financial data from exchanges to a system. Optimizing the efficiency of data fetching and order processing.',
+    stack: ['C++', 'Python', 'React', 'Low Latency System', 'Finance'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
