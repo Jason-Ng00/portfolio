@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
 
   if (!projects.length) return null;
   return (
-    <section id="projects" className="py-20 px-4" style={{scrollMarginTop: '90px'}}>
+    <section id="projects" className="py-5 px-4" style={{scrollMarginTop: '90px'}}>
       <div ref={sectionRef} className={`max-w-7xl mx-auto transition-all duration-1000 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
         <h2 className="text-center uppercase mb-12 text-3xl font-bold text-foreground tracking-wide">
           Projects

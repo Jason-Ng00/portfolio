@@ -7,19 +7,19 @@ export const about = {
   name: 'Jason Ng',
   role: 'Fullstack Software Engineer / Quant Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
-  social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
-  },
+    'A passionate software engineer specializing in full-stack development and quantitative finance, dedicated to crafting innovative solutions at the intersection of technology and finance. Experienced in designing low-latency systems and seamlessly integrating AI to drive impactful results.',
+  // resume: 'https://example.com',
+  // social: {
+  //   linkedin: 'https://linkedin.com',
+  //   github: 'https://github.com',
+  // },
 };
 
 export type Project = {
   name: string;
   description: string;
   stack: string[];
-  sourceCode: string;
+  sourceCode?: string;
   livePreview: string;
 };
 
@@ -37,32 +37,41 @@ export const projects: Project[] = [
     description:
       'A strategy backtesting system with dashboard and analysis from AI models simulating different views from trading experts',
     stack: ['Streamlit', 'LLM Integration', 'Python', 'Data Engineering', 'Finance'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    // sourceCode: 'https://github.com',
+    livePreview: 'https://trade-ideation.streamlit.app/',
   },
   {
     name: 'Low Latency Data Pipeline',
     description:
       'Simulating a low latency data pipeline for financial data from exchanges to a system. Optimizing the efficiency of data fetching and order processing.',
     stack: ['C++', 'Python', 'React', 'Low Latency System', 'Finance'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    sourceCode: 'https://huggingface.co/spaces/JasonNg00/low-latency-data-flow/tree/main',
+    livePreview: 'https://huggingface.co/spaces/JasonNg00/low-latency-data-flow',
   },
 ];
 
 export const skills: string[] = [
+  'Python',
+  'C++',
+  'Java',
+  'C#',
   'HTML',
   'CSS',
   'JavaScript',
   'TypeScript',
   'React',
-  'Redux',
-  'SASS',
-  'Material UI',
-  'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Angular',
+  'Node.js',
+  'MySQL',
+  'MongoDB',
+];
+
+export const cloudExperience: string[] = [
+  'AWS',
+  'Azure',
+  'Firebase',
+  'Vercel',
+  'Cloudflare',
 ];
 
 export const contact = {

@@ -65,17 +65,67 @@ const Landing: React.FC<LandingProps> = ({ onEnterPortfolio }) => {
       onClick={handleClick}
       onMouseEnter={() => setShowTooltip(true)}
     >
-      {/* Animated background particles */}
-      <div className="absolute inset-0 opacity-20">
-        {[...Array(50)].map((_, i) => (
+      {/* Enhanced animated background particles */}
+      <div className="absolute inset-0 opacity-30">
+        {/* Large particles */}
+        {[...Array(20)].map((_, i) => (
           <div
-            key={i}
-            className="absolute w-1 h-1 bg-white rounded-full animate-pulse"
+            key={`large-${i}`}
+            className="absolute w-2 h-2 bg-white rounded-full animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${3 + Math.random() * 4}s`,
+              opacity: 0.6,
+            }}
+          />
+        ))}
+        {/* Medium particles */}
+        {[...Array(40)].map((_, i) => (
+          <div
+            key={`medium-${i}`}
+            className="absolute w-1 h-1 bg-purple-300 rounded-full animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
               animationDelay: `${Math.random() * 2}s`,
-              animationDuration: `${2 + Math.random() * 3}s`
+              animationDuration: `${2 + Math.random() * 3}s`,
+              opacity: 0.8,
+            }}
+          />
+        ))}
+        {/* Small particles */}
+        {[...Array(60)].map((_, i) => (
+          <div
+            key={`small-${i}`}
+            className="absolute w-0.5 h-0.5 bg-blue-200 rounded-full animate-pulse"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 4}s`,
+              animationDuration: `${1.5 + Math.random() * 2}s`,
+              opacity: 0.9,
+            }}
+          />
+        ))}
+        {/* Floating particles with different colors */}
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={`floating-${i}`}
+            className={`absolute rounded-full animate-bounce ${
+              i % 4 === 0 ? 'bg-pink-300' : 
+              i % 4 === 1 ? 'bg-cyan-300' : 
+              i % 4 === 2 ? 'bg-yellow-300' : 'bg-green-300'
+            }`}
+            style={{
+              width: `${0.5 + Math.random() * 1.5}px`,
+              height: `${0.5 + Math.random() * 1.5}px`,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 5}s`,
+              animationDuration: `${2 + Math.random() * 3}s`,
+              opacity: 0.7,
             }}
           />
         ))}
