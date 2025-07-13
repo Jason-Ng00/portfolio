@@ -63,6 +63,24 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
             </Button>
           </a>
         )}
+        {project.demo && (
+          <a 
+            href={project.demo} 
+            aria-label="demo" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group/link"
+          >
+            <Button 
+              variant="outline" 
+              size="sm"
+              className="group-hover/link:bg-primary group-hover/link:text-primary-foreground transition-colors"
+            >
+              <FaExternalLinkAlt className="mr-2" />
+              Demo
+            </Button>
+          </a>
+        )}
       </div>
     </div>
   </div>

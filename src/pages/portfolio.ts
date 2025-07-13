@@ -20,7 +20,8 @@ export type Project = {
   description: string;
   stack: string[];
   sourceCode?: string;
-  livePreview: string;
+  livePreview?: string;
+  demo?: string;
 };
 
 export const projects: Project[] = [
@@ -29,8 +30,9 @@ export const projects: Project[] = [
     description:
       'A Desktop Application that allows users to chat with AI models anywhere on their computer. Activating via hotkey, it reads in the current highlgihted text and provides a seamless user experience.',
     stack: ['Electronjs', 'TypeScript', 'React', 'LLM Integration'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    // sourceCode: 'https://github.com',
+    // livePreview: 'https://github.com',
+    demo: "https://drive.google.com/file/d/1ogvxz4vu0GQexcPXHiTQztq34zO18Oc3/view?usp=sharing"
   },
   {
     name: 'Trading Ideation',
